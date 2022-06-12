@@ -11,7 +11,7 @@ fun main() {
         comments = Post.Comments(),
         copyright = Post.Copyright(),
         reposts = Post.Reposts(),
-        postType = Post.PostType.Post,
+        postType = Post.PostType.POST,
         views = Post.Views(),
         signerId = 1,
         canPin = false,
@@ -22,7 +22,22 @@ fun main() {
         isFavorite = false,
         donut = Post.Donut(),
         postponedId = 1,
-        likes = Post.Likes()
+        likes = Post.Likes(),
+        postSource = null,
+        geo = Post.Geo("loc", "12 31 2", null),
+        copyHistory = null,
+        attachments = arrayOf(
+            LinkAttachments(
+                LinkAttachments.Link(
+                    "wwwww",
+                    "Title",
+                    null,
+                    "des"
+                )
+            )
+
+        )
+
     )
 
     val secondPost = Post(
@@ -37,7 +52,7 @@ fun main() {
         comments = Post.Comments(),
         copyright = Post.Copyright(),
         reposts = Post.Reposts(),
-        postType = Post.PostType.Post,
+        postType = Post.PostType.POST,
         views = Post.Views(),
         signerId = 1,
         canPin = false,
@@ -48,7 +63,26 @@ fun main() {
         isFavorite = false,
         donut = Post.Donut(),
         postponedId = 1,
-        likes = Post.Likes()
+        likes = Post.Likes(),
+        postSource = null,
+        geo = Post.Geo("loc2", "091236", null),
+        copyHistory = null,
+        attachments = arrayOf(
+            VideoAttachments(
+                VideoAttachments.Video(
+                    1,
+                    2,
+                    "video_title",
+                    60,
+                    "www",
+                    12,
+                    100,
+                    4,
+                    "VLC"
+                )
+            )
+
+        )
     )
 
     val service = WallService()
