@@ -20,7 +20,7 @@ class WallServiceTest {
             comments = Post.Comments(),
             copyright = Post.Copyright(),
             reposts = Post.Reposts(),
-            postType = Post.PostType.Post,
+            postType = Post.PostType.POST,
             views = Post.Views(),
             signerId = 1,
             canPin = false,
@@ -31,7 +31,21 @@ class WallServiceTest {
             isFavorite = false,
             donut = Post.Donut(),
             postponedId = 1,
-            likes = Post.Likes()
+            likes = Post.Likes(),
+            postSource = null,
+            geo = Post.Geo("locTT", "", null),
+            copyHistory = null,
+            attachments = arrayOf(
+                LinkAttachments(
+                    LinkAttachments.Link(
+                        "www43ww",
+                        "Title33",
+                        null,
+                        "deddss"
+                    )
+                )
+
+            )
         )
 
         val result = service.add(post)
@@ -58,7 +72,7 @@ class WallServiceTest {
                 comments = Post.Comments(),
                 copyright = Post.Copyright(),
                 reposts = Post.Reposts(),
-                postType = Post.PostType.Post,
+                postType = Post.PostType.POST,
                 views = Post.Views(),
                 signerId = 1,
                 canPin = false,
@@ -69,7 +83,21 @@ class WallServiceTest {
                 isFavorite = false,
                 donut = Post.Donut(),
                 postponedId = 1,
-                likes = Post.Likes()
+                likes = Post.Likes(),
+                postSource = null,
+                geo = Post.Geo("loc", "12 31 2", null),
+                copyHistory = null,
+                attachments = arrayOf(
+                    LinkAttachments(
+                        LinkAttachments.Link(
+                            "wwwww",
+                            "Title",
+                            null,
+                            "des"
+                        )
+                    )
+
+                )
             )
         )
 
@@ -86,7 +114,7 @@ class WallServiceTest {
                 comments = Post.Comments(),
                 copyright = Post.Copyright(),
                 reposts = Post.Reposts(),
-                postType = Post.PostType.Post,
+                postType = Post.PostType.POST,
                 views = Post.Views(),
                 signerId = 1,
                 canPin = false,
@@ -97,7 +125,21 @@ class WallServiceTest {
                 isFavorite = false,
                 donut = Post.Donut(),
                 postponedId = 1,
-                likes = Post.Likes()
+                likes = Post.Likes(),
+                postSource = null,
+                geo = Post.Geo("loc", "12 31 2", null),
+                copyHistory = null,
+                attachments = arrayOf(
+                    LinkAttachments(
+                        LinkAttachments.Link(
+                            "wwwww",
+                            "Title",
+                            null,
+                            "des"
+                        )
+                    )
+
+                )
             )
         )
 
@@ -114,7 +156,7 @@ class WallServiceTest {
                 comments = Post.Comments(),
                 copyright = Post.Copyright(),
                 reposts = Post.Reposts(),
-                postType = Post.PostType.Post,
+                postType = Post.PostType.POST,
                 views = Post.Views(),
                 signerId = 1,
                 canPin = false,
@@ -125,7 +167,21 @@ class WallServiceTest {
                 isFavorite = false,
                 donut = Post.Donut(),
                 postponedId = 1,
-                likes = Post.Likes()
+                likes = Post.Likes(),
+                postSource = null,
+                geo = Post.Geo("loc", "12 31 2", null),
+                copyHistory = null,
+                attachments = arrayOf(
+                    LinkAttachments(
+                        LinkAttachments.Link(
+                            "wwwww",
+                            "Title",
+                            null,
+                            "des"
+                        )
+                    )
+
+                )
             )
         )
 
@@ -142,7 +198,7 @@ class WallServiceTest {
             comments = Post.Comments(),
             copyright = Post.Copyright(),
             reposts = Post.Reposts(),
-            postType = Post.PostType.Post,
+            postType = Post.PostType.POST,
             views = Post.Views(),
             signerId = 1,
             canPin = false,
@@ -153,7 +209,21 @@ class WallServiceTest {
             isFavorite = false,
             donut = Post.Donut(),
             postponedId = 1,
-            likes = Post.Likes()
+            likes = Post.Likes(),
+            postSource = null,
+            geo = Post.Geo("loc", "12 31 2", null),
+            copyHistory = null,
+            attachments = arrayOf(
+                LinkAttachments(
+                    LinkAttachments.Link(
+                        "wwwww",
+                        "Title",
+                        null,
+                        "des"
+                    )
+                )
+
+            )
         )
 
         val result = service.update(update)
@@ -180,7 +250,7 @@ class WallServiceTest {
                 comments = Post.Comments(),
                 copyright = Post.Copyright(),
                 reposts = Post.Reposts(),
-                postType = Post.PostType.Post,
+                postType = Post.PostType.POST,
                 views = Post.Views(),
                 signerId = 1,
                 canPin = false,
@@ -191,7 +261,21 @@ class WallServiceTest {
                 isFavorite = false,
                 donut = Post.Donut(),
                 postponedId = 1,
-                likes = Post.Likes()
+                likes = Post.Likes(),
+                postSource = null,
+                geo = Post.Geo("loc", "12 31 2", null),
+                copyHistory = null,
+                attachments = arrayOf(
+                    LinkAttachments(
+                        LinkAttachments.Link(
+                            "wwwww",
+                            "Title",
+                            null,
+                            "des"
+                        )
+                    )
+
+                )
             )
         )
 
@@ -208,7 +292,7 @@ class WallServiceTest {
                 comments = Post.Comments(),
                 copyright = Post.Copyright(),
                 reposts = Post.Reposts(),
-                postType = Post.PostType.Post,
+                postType = Post.PostType.POST,
                 views = Post.Views(),
                 signerId = 1,
                 canPin = false,
@@ -219,7 +303,21 @@ class WallServiceTest {
                 isFavorite = false,
                 donut = Post.Donut(),
                 postponedId = 1,
-                likes = Post.Likes()
+                likes = Post.Likes(),
+                postSource = null,
+                geo = Post.Geo("loc", "12 31 2", null),
+                copyHistory = null,
+                attachments = arrayOf(
+                    LinkAttachments(
+                        LinkAttachments.Link(
+                            "wwwww",
+                            "Title",
+                            null,
+                            "des"
+                        )
+                    )
+
+                )
             )
         )
 
@@ -236,7 +334,7 @@ class WallServiceTest {
                 comments = Post.Comments(),
                 copyright = Post.Copyright(),
                 reposts = Post.Reposts(),
-                postType = Post.PostType.Post,
+                postType = Post.PostType.POST,
                 views = Post.Views(),
                 signerId = 1,
                 canPin = false,
@@ -247,7 +345,21 @@ class WallServiceTest {
                 isFavorite = false,
                 donut = Post.Donut(),
                 postponedId = 1,
-                likes = Post.Likes()
+                likes = Post.Likes(),
+                postSource = null,
+                geo = Post.Geo("loc", "12 31 2", null),
+                copyHistory = null,
+                attachments = arrayOf(
+                    LinkAttachments(
+                        LinkAttachments.Link(
+                            "wwwww",
+                            "Title",
+                            null,
+                            "des"
+                        )
+                    )
+
+                )
             )
         )
 
@@ -264,7 +376,7 @@ class WallServiceTest {
             comments = Post.Comments(),
             copyright = Post.Copyright(),
             reposts = Post.Reposts(),
-            postType = Post.PostType.Post,
+            postType = Post.PostType.POST,
             views = Post.Views(),
             signerId = 1,
             canPin = false,
@@ -275,7 +387,21 @@ class WallServiceTest {
             isFavorite = false,
             donut = Post.Donut(),
             postponedId = 1,
-            likes = Post.Likes()
+            likes = Post.Likes(),
+            postSource = null,
+            geo = Post.Geo("loc", "12 31 2", null),
+            copyHistory = null,
+            attachments = arrayOf(
+                LinkAttachments(
+                    LinkAttachments.Link(
+                        "wwwww",
+                        "Title",
+                        null,
+                        "des"
+                    )
+                )
+
+            )
         )
 
         val result = service.update(update)

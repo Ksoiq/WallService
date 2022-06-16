@@ -6,8 +6,6 @@ class WallService {
         uniqueId++
         val addedPost = post.copy(id = uniqueId)
         posts += addedPost
-        println(posts.size)
-        println(posts.last())
         return posts.last()
     }
 
@@ -36,7 +34,11 @@ class WallService {
                     isPinned = updatePost.isPinned,
                     markedAsAds = updatePost.markedAsAds,
                     isFavorite = updatePost.isFavorite,
-                    postponedId = updatePost.postponedId
+                    postponedId = updatePost.postponedId,
+                    postSource = updatePost.postSource,
+                    geo = updatePost.geo,
+                    copyHistory = updatePost.copyHistory,
+                    attachments = updatePost.attachments
                 )
                 return true
             }
