@@ -85,9 +85,24 @@ fun main() {
         )
     )
 
+    val firstCom = Comment(
+        id = 1,
+        attachments = null,
+        date = 101,
+        donut = Comment.CommentDonut(),
+        fromId = 234,
+        replyToComment = 2,
+        replyToUser = 3,
+        text = "jfgjfjf",
+        theard = Comment.Thread()
+    )
+
     val service = WallService()
     service.add(firstPost)
     service.add(secondPost)
+    service.createComment(1, firstCom)
+
+
 
 
 }
